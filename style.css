@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    /*border: solid 1px pink;*/
+}
+*:focus {outline: none;}
+
+
+
+body {
+    text-align: center;
+    font-family: arial;
+    color: rgba(0,0,0,.5);
+    /*letter-spacing: .5em;*/
+    background: linear-gradient(90deg, #250800, #cb7cdc);
+    height: 100vh;   /*1vh is equal to 1% of the viewport's height. That is to say, 100vh is equal to the height of the browser window, regardless of where the element is situated in the DOM tree*/
+    margin: auto;
+}
+p {
+    margin: 16px 10px;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    /*text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;*/
+    letter-spacing: 20px;
+    margin-top: 0px;
+    padding-top: 100px;
+}
+h2 {
+    margin-top: 70px;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+h3 {
+    font-family: courier;
+    min-width: 100px;
+    font-size: 20px;
+    letter-spacing: initial;
+    color: black;
+    background-color: rgba(255,255,255,.2);
+    margin-bottom: 0px;
+}
+h3::selection {background: deeppink;}
+
+#container1, #container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.color {
+    width: 70px;
+    height: 70px;
+    padding: 3px;
+    border: solid 1px black;
+    border-radius: 7px;
+    margin: 10px;
+    transition: 300ms;
+}
+.color:hover {
+    transform: scale(1.05);
+}
+/*#color1 {order: 1;}
+#color2 {order: 2;}
+#color3 {order: 3;}
+#color4 {order: 4;}
+#color5 {order: 5;}*/
+
+#removeColor, #addColor {
+    width: 32px;
+    height: 32px;
+    padding: 1px;
+    border: solid 1px black;
+    border-radius: 16px;
+    margin: 10px;
+    /*opacity: .75;*/
+    background: rgba(255, 255, 255, 1);
+    letter-spacing: initial;
+    font-size: 1em;
+}
+.removeColorActive, .addColorActive {opacity: .6;}
+.removeColorActive:hover, .addColorActive:hover {
+    opacity: 1;
+    /*background-color: white;*/
+    /*background: rgba(255, 255, 255, .5);*/
+}
+.removeColorInactive, .addColorInactive {opacity: .2;}
+
+#gradientAngle {
+    width: 210px;
+    opacity: .6;
+}
+#gradientAngle:hover {opacity: initial;}
+
+#rdmButton, #rdmButtonLight, #copyCSS {
+    width: 140px;
+    height: 25px;
+    border: solid 1px black;
+    border-radius: 10px;
+    opacity: .75;
+    background: rgba(255, 255, 255, 0.5);
+    letter-spacing: initial;
+    margin: 10px 2px;
+}
+#rdmButton:hover, #rdmButtonLight:hover, #copyCSS:hover {
+    /*opacity: initial;*/
+    background-color: white;
+}

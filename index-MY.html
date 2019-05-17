@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Super Background generator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="favicon.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<h1>Background generator</h1>
+	<div id="container1">
+		<input type="color" name="color1" id="color1" class="color" value="#d2691e">  <!-- chocolate -->
+		<input type="color" name="color2" id="color2" class="color" value="#0088f0">
+	</div>
+	<div>
+		<button id="removeColor" class="removeColorInactive">-</button>
+		<button id="addColor" class="addColorActive">+</button>
+	</div>
+	<div id="container2">
+		<p>0&deg</p>
+		<input type="range" name="gradientAngle" id="gradientAngle" min="0" max="360" value="90">
+		<p>360&deg</p>
+	</div>
+	<div>
+		<button id="rdmButton">random: all colors</button>
+		<button id="rdmButtonLight">random: light colors</button>
+	</div>
+	<h2>Current CSS background</h2>
+	<h3><!-- content is added by JS --></h3>
+	<div>
+		<button id="copyCSS" class="button">Copy to clipboard</button>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
