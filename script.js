@@ -28,6 +28,7 @@ const changeColor = () => {
 	let toRGB = body.style.background; // behind the scene, color is converted from HEX to RGB, and variable "toRGB" contains color in RGB.
 	h3.textContent = toRGB;
 }
+
 const changeColorRemove = () => {
 	let temp = body.style.background;
 	let nr = temp.lastIndexOf("r") - 2;
@@ -39,6 +40,7 @@ const changeColorRemove = () => {
 const RGBtoHEX = () => {
 
 }
+//
 	// 	if (colorArrayLength > 4) {
 	// 		body.style.background = `linear-gradient(${range.value}deg, 
 	// 		${color1.value}, ${color2.value}, ${color3.value}, ${color4.value}, ${color5.value})`;
@@ -86,7 +88,7 @@ const changeColorRandomly = () => {  //THIS MUST BE DONE MORE CLEVER - DRY METHO
 	}
 	changeColor();
 }
-
+//
 	// const randomOneColor = () => {
 	// 	let possible = "0123456789abcdef";
 	// 	let HEXnr = "#";
@@ -106,7 +108,7 @@ const changeOneColorRandomlyLight = (nrx) => {  //THIS MUST BE DONE MORE CLEVER 
 		}
 		nrx.value = HEXnr;
 		changeColor();
-	}
+}
 
 const changeColorRandomlyLight = () => {  //THIS MUST BE DONE MORE CLEVER - "DRY" METHOD - DON'T REPEAT YOURSELF!!!
 	// let angle = Math.floor(Math.random()*361);
@@ -152,6 +154,7 @@ const addNewColorFunc = () => {
 			addColor5();
 	}
 }
+//
 	// var clickNr = 0;
 	// const addNewColorFunc = () => {    //too much code, try DRY!! ok-->
 	// 	clickNr++;
@@ -189,7 +192,7 @@ const removeColorFunc = () => {
 	}
 }
 
-
+//
 	// const removeColorFunc = () => {    //too much code, try DRY!! ok-->
 	// 	console.log("ehhh?");
 	// 	let colorArrayLength = colorArray.length;
@@ -230,6 +233,7 @@ const removeColorFunc = () => {
 	// 	// changeColorRandomly();
 	// 	colorArray.push(color.value);
 	// }  //alternative code is hidden, does not work
+
 const addColor5 = () => {    //not a solution, now here DRY is needed
 	const color5 = document.createElement("input");
 	color5.setAttribute("type", "color");
@@ -281,12 +285,6 @@ const copyCSSFunc = () => {
 
 	// document.exexCommand("copy");
 }
-
-	// color1.addEventListener("input", changeColor);
-	// color2.addEventListener("input", changeColor);
-	// color3.addEventListener("input", changeColor);
-	// color4.addEventListener("input", changeColor);
-	// color5.addEventListener("input", changeColor);
 
 range.addEventListener("input", changeColor);
 
