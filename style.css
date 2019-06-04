@@ -21,7 +21,6 @@ p {
 
 h1 {
     font-size: calc(12px + 3vw);
-
     text-transform: uppercase;
     /*text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;*/
     letter-spacing: 1.5vw;
