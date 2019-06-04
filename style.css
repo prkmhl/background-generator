@@ -20,16 +20,16 @@ p {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: calc(12px + 3vw);
     text-transform: uppercase;
     /*text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;*/
-    letter-spacing: 20px;
+    letter-spacing: 1.5vw;
     margin-top: 0px;
     padding-top: 100px;
 }
 h2 {
     margin-top: 70px;
-    font-size: 25px;
+    font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 15px;
 }
